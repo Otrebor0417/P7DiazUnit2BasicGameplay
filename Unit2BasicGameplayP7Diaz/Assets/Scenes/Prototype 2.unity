@@ -683,6 +683,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 898366331}
+  - component: {fileID: 898366332}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -699,12 +700,28 @@ Transform:
   m_GameObject: {fileID: 898366330}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.106392324, y: -25.672005, z: -6.746769}
+  m_LocalPosition: {x: 0, y: 0, z: 16.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &898366332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898366330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 095abb4d1f0a59d4d952caeaa4901fe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalPrefabs:
+  - {fileID: 3011987661723502189, guid: 81364a6759e24c14085eec0b15263459, type: 3}
+  - {fileID: 8043206801152162590, guid: caf287ee1f9c86f4f94dff58783cf92d, type: 3}
+  - {fileID: 3759482856548271515, guid: 6e87d968282b3de4ca93b8be09d95e20, type: 3}
 --- !u!1 &992285705
 GameObject:
   m_ObjectHideFlags: 0
