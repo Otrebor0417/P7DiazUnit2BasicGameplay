@@ -24,17 +24,17 @@ public class DestroyOutOfBounds : MonoBehaviour
         }
         else if (transform.position.z < lowerBound)
         {
-            Debug.Log("Game Over!");
+            gameManager.AddLives(-1); 
             Destroy(gameObject);
         }
         else if (transform.position.x > sideBound)
         {
-            Debug.Log("Game Over!");
+            gameManager.AddLives(-1); 
             Destroy(gameObject);
         }
         else if (transform.position.x < -sideBound)
         {
-            Debug.Log("Game Over!");
+            gameManager.AddLives(-1);
             Destroy(gameObject);
         }
     }
