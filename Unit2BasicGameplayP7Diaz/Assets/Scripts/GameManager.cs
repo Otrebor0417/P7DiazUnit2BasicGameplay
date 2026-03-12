@@ -4,6 +4,7 @@ public class GameManager : MonoBehaviour
 {
     private int score = 0;
     private int lives = 3;
+    public bool isGameOver = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
     }
     public void AddLives(int value)
     {
+        if (isGameOver) return;
         lives += value;
         if (lives <=0)
         {
@@ -28,6 +30,7 @@ public class GameManager : MonoBehaviour
 
     public void AddScore(int value)
     {
+        if (isGameOver) return;
         score += value;
         Debug.Log("Score= " + score);
     }
